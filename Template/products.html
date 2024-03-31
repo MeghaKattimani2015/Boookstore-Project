@@ -1,0 +1,526 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://use.fontawesome.com/be1ba39dfe.js"></script>
+    <link rel="stylesheet" href="{% static 'css/product_style.css' %}">
+    <title>Book Store</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-right">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'products' %}">Products</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="{% url 'Account' %}">Account</a></li>
+            <li><a href="{% url 'Cart' %}">Cart</a></li>
+        </div>
+    </nav>
+
+        <div class="section-body">
+            <div class="vertical-nav">
+                <ul>
+                    <h4><left>Category</left></h4>
+                    <li><a href="#Adventure">Adventure</a></li>
+                    <li><a href="#Thriller">Thriller</a></li>
+                    <li><a href="#Spiritual">Spiritual</a></li>
+                    <li><a href="#Comedy">Comedy</a></li>
+                </ul>
+            </div>
+
+            <div class="gallery-main" style="margin-left:25%;padding:1px 16px;height:1000px;">
+                <div class="Adventure" id="Adventure">
+                    <h2>Adventure</h2>
+
+                    <div class="gallery">
+                        <div class="image-holder">
+                            <a href="http://127.0.0.1:8000/products/Treasure Island">
+                                <img src="{% static 'image/Adv1.jfif' %}" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Treasure Island
+                                Price : 200
+                                <br>
+                                <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'login' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="{% url 'Details' %}" class="Details" ><button>Product Details</button></a>
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="{% static 'image/Adv2.jfif' %}" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                The Magic of
+                                Unicorn
+                                Price : 250
+                                <br>
+                                <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="{% static 'image/Adv3.jfif' %}" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Summer Adventure
+                                Price : 180
+                                <br>
+                                <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="{% static 'image/Adv4.jfif' %}" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Dragon Run
+                                Price : 460
+                                <br>
+                                <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="{% static 'image/Adv5.jfif' %}" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                The Abominable
+                                Price : 390
+                                <br>
+                                <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="{% static 'image/Adv6.jfif' %}" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Narnia
+                                Price : 400
+                                <br>
+                                <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="{% static 'image/Adv7.jfif' %}" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Mount Majestic
+                                Price : 304
+                                <br>
+                                <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="{% static 'image/Adv8.jfif' %}" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Underwater
+                                Price : 340
+                                <br>
+                                <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Thriller -->
+
+                    <div class="Thriller" id="Thriller">
+                        <h2>Thriller</h2>
+    
+                        <div class="gallery">
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/th1.jfif' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Darkest Dawn
+                                    Price : 120
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/th2.jfif' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    The Takings
+                                    Price : 402
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/th3.jfif' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Death sentence
+                                    Price : 299
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/th4.jfif' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Billion Dollor spy
+                                    Price : 150
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/th5.jfif' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Deviding Line
+                                    Price : 300
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/th6.jfif' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Joe Hill
+                                    Price : 389
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/th7.jfif' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Mirror
+                                    Price : 269
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/th8.jfif' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Anita Waller
+                                    Price : 451
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+
+
+                        <!-- Spiritual -->
+
+                    <div class="Spiritual" id="Spiritual">
+                        <h3>Spiritual</h3>
+    
+                        <div class="gallery">
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/s1.jpg' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Bhagavadgita
+                                    Price : 560
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/s2.jpg' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Sanathan Dharma
+                                    Price : 400
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/s3.jpg' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    The Upanishads
+                                    Price : 800
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/s4.jpg' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Hanuman Chalisa
+                                    Price : 150
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/s5.jpg' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Vision and Wisdom
+                                    Price : 300
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/s6.jpg' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Buddhist Art
+                                    Price : 389
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/s7.jpg' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Jaina Ethics
+                                    Price : 269
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="{% static 'image/s8.jpg' %}" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    ShriRamcharithamanas
+                                    Price : 700
+                                    <br>
+                                    <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                            <!-- Comedy -->
+                            <div class="Comedy" id="Comedy">
+                                <h2>Comedy</h2>
+            
+                                <div class="gallery">
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="{% static 'image/c1.jfif' %}" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 400
+                                            <br>
+                                            <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="{% static 'image/c2.jfif' %}" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 299
+                                            <br>
+                                            <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="{% static 'image/c3.jfif' %}" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 349
+                                            <br>
+                                            <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="{% static 'image/c4.jfif' %}" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 299
+                                            <br>
+                                            <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="{% static 'image/c5.jfif' %}" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 199
+                                            <br>
+                                            <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="{% static 'image/c6.jfif' %}" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 149
+                                            <br>
+                                            <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="{% static 'image/c7.jfif' %}" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 349
+                                            <br>
+                                            <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="{% static 'image/c8.jfif' %}" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 250
+                                            <br>
+                                            <a href="{% url 'Cart' %}" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                                <a href="{% url 'checkout' %}" class="shopping-cart" ><button>Buy</button></a>
+                                <a href="#" class="Details" ><button>Product Details</button></a>
+                                        </div>
+                                    </div>
+            
+            
+                                </div>
+        
+                                
+                            
+                </div>
+            </div>
+
+            <br>
+
+            
+              
+
+        </div>
+
+
+    </body>
+
+</html>

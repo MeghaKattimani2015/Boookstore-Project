@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://use.fontawesome.com/be1ba39dfe.js"></script>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Book Zone</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-right">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'products' %}">Products</a></li>
+          <li><a href="{% url 'About' %}">About</a></li>
+          <li><a href="{% url 'Account' %}">Account</a></li>
+          <li><a href="{% url 'Cart' %}">Cart</a></li>
+        </div>
+    </nav>
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>REGISTER</h3>
+            <p>Please enter your credentials to login.</p>
+          </div>
+        </div>
+        <form class="login-form">
+          <input type="text" placeholder="username"/>
+          <input type="password" placeholder="password"/>
+           Female <input type="radio" name="female" value="female"/>
+            Male<input type="radio"  name="male" value="male"/>
+            <input type="Date of Birth" placeholder="Date of Birth"/>
+          <button><a href="{% url 'index' %}" style="text-decoration: none;">Register</a></button>
+        </form>
+      </div>
+    </div>
+</body>
+</body>
+</html>
